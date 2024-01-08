@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    nitro: {
+        vercel: {
+            regions: ["cle1", "iad1", "pdx1", "sfo1", "sin1", "syd1", "hnd1", "kix1"]
+        }
+    },
     devtools: {enabled: false},
     modules: ['@nuxt/ui'],
     css: ['~/assets/css/style.css'],
